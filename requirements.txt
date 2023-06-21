@@ -1,0 +1,9 @@
+﻿torch
+zmq
+numpy
+Pillow
+tqdm
+protobuf
+matplotlib
+imageio
+scipy
