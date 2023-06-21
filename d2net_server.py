@@ -1,6 +1,6 @@
 import time
 import zmq
-import d2net_pb2 as d2
+import d2net_msg_pb2 as d2
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -38,11 +38,11 @@ if __name__=="__main__":
     )
 
     parser.add_argument(
-        '--model', type=str, required=True,
+        '--model', type=str, default='models//d2_ots.pth',
         help='path to the model'
     )
 
-    args = parser.parse(args)
+    args = parser.parse_args()
     print(args)
 
     #pipe init:
